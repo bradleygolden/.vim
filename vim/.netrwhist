@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/bradleygolden/Development/website/images'
+let g:netrw_dirhist_2='/Users/bradleygolden/Google Drive/School/CS211/Project 1'
+let g:netrw_dirhist_3='/Users/bradleygolden/Development/UIC/cs211/project-2'
+let g:netrw_dirhist_4='/Users/bradleygolden/Development/SparkForum'
+let g:netrw_dirhist_5='/Users/bradleygolden/Development/Tutorials/javascript'
+let g:netrw_dirhist_6='/Users/bradleygolden/.vim'
+let g:netrw_dirhist_7='/Users/bradleygolden/Development/current-projects/cs251'
+let g:netrw_dirhist_8='/Users/bradleygolden/.vim'
+let g:netrw_dirhist_9='/Users/bradleygolden/Development/cloudsweeper/drano/tornadio2'
