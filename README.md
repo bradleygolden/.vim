@@ -22,6 +22,7 @@ Allow vim to remember cursor position before last close:
 	sudo vim /etc/vim/vimrc
 	
 	Uncomment the following to have Vim jump to the last position when reopening a file
+
 	```vim
 	if has("autocmd")
   		au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
