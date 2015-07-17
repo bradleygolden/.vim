@@ -35,6 +35,7 @@ filetype plugin indent on    " required
 "
 colorscheme badwolf
 set hlsearch " highlight search items
+set nu " show fixed line numbers when in others modes
 syntax enable " turn on fancy syntax settings
 
 " set default indent settings
