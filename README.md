@@ -1,35 +1,35 @@
 Installation:
 
-    git clone https://github.com/bradleygolden/.vim.git
+    1. git clone https://github.com/bradleygolden/.vim.git
 
 Create symlinks:
 
-    ln -s ~/.vim/vimrc ~/.vimrc
+    1. ln -s ~/.vim/vimrc ~/.vimrc
 
 Switch to the `~/.vim/bundle` directory to install Vundle:
 
-    cd ~/.vim/bundle
-    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    1. cd ~/.vim/bundle
+    2. git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 Open vimrc and install plugins:
 
-    vim ~/.vimrc
-    :source %
-    :PluginInstall
+    1. vim ~/.vimrc
+    2. :source %
+    3. :PluginInstall
 
 Allow vim to remember cursor position before last close:
 
-	sudo vim /etc/vim/vimrc
+	1. sudo vim /etc/vim/vimrc
 	
-	Uncomment the following to have Vim jump to the last position when reopening a file
+	2. Uncomment the following to have Vim jump to the last position when reopening a file
 
-	```vim
+	```
 	if has("autocmd")
   		au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     		\| exe "normal! g'\"" | endif
 	endif
 	```
 	
-	Save changes and close with :wq
+	3. Save changes and close with :wq
 
-	sudo chown user:group ~/.viminfo (Where user and group are likely your username)
+	4. sudo chown user:group ~/.viminfo (Where user and group are likely your username)
