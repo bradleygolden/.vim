@@ -14,8 +14,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline' " status bar
 Plugin 'tpope/vim-fugitive' " git in vim
 Plugin 'scrooloose/nerdtree' " file browser
-Plugin 'klen/python-mode'
-Plugin 'pangloss/vim-javascript'
+Plugin 'klen/python-mode' "fancy python plugin
+Plugin 'pangloss/vim-javascript' "fancy javasctipt plugin
 Plugin 'myusuf3/numbers.vim' " relative line numbers
 
 " All of your Plugins must be added before the following line
@@ -34,9 +34,14 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 colorscheme badwolf
-set hlsearch
-set nu
+set hlsearch " highlight search items
+syntax enable " turn on fancy syntax settings
 
+" set default indent settings
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 noexpandtab
+autocmd FileType python setlocal ts=8 et sw=4 sts=4 expandtab
 " nerd tree
 map <C-n> :NERDTreeToggle<CR>
 
@@ -48,11 +53,3 @@ let g:pymode_options_max_line_length = 100
 
 " enable html/css syntax highlighting in js files
 let javascript_enable_domhtmlcss = 1
-
-set regexpengine=1
-syntax enable
-
-" set default indent settings
-autocmd Filetype html setlocal ts=2 sw=2 expandtab
-autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
-autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 noexpandtab
