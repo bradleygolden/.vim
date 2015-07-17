@@ -16,3 +16,19 @@ Open vimrc and install plugins:
     vim ~/.vimrc
     :source %
     :PluginInstall
+
+Allow vim to remember cursor position before last close:
+
+	sudo vim /etc/vim/vimrc
+	
+	Uncomment the following to have Vim jump to the last position when reopening a file
+	```(vim)
+	if has("autocmd")
+  		au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    		\| exe "normal! g'\"" | endif
+	endif
+	```
+	
+	Save changes and close with :wq
+
+	sudo chown user:group ~/.viminfo (Where user and group are likely your username)
