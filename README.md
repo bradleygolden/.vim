@@ -19,12 +19,12 @@
 
 ###Allow vim to remember cursor position before last close:
 	* sudo vim /etc/vim/vimrc
-	* Find this line in vimrc:
+	* Find this line in vimrc and uncomment the entire if statement:
 
-		>Uncomment the following to have Vim jump to the last position when reopening a file
+		Uncomment the following to have Vim jump to the last position when reopening a file
 		if has("autocmd")
-		au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-		\| exe "normal! g'\"" | endif
+			au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+			\| exe "normal! g'\"" | endif
 		endif	
 
 	* Save changes and close with :wq
