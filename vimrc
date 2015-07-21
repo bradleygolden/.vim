@@ -11,7 +11,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Add plugins below this line
-Plugin 'bling/vim-airline' " status bar
 Plugin 'tpope/vim-fugitive' " git in vim
 Plugin 'scrooloose/nerdtree' " file browser
 Plugin 'klen/python-mode' "fancy python plugin
@@ -20,6 +19,7 @@ Plugin 'myusuf3/numbers.vim' " relative line numbers
 Plugin 'ervandew/supertab' " supertab - auto completion
 Plugin 'tpope/vim-surround' " quote/parenthesis/html tag wrapper
 Plugin 'Yggdroot/indentLine' " indent line guides
+Plugin 'bling/vim-airline' " status bar
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -62,4 +62,5 @@ let javascript_enable_domhtmlcss = 1
 let g:indentLine_color_term = 239
 
 " enable airline toolbar
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1 " shows tab bar
+set laststatus=2 " fixes bug where airline doesn't show until splitting screen
