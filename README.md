@@ -41,5 +41,5 @@
 
 ###List of plugins used:
 	* Coming soon...
-###Where do I find more plugins or change the current ones?
+###Where do I find more plugins?
 	* http://vimawesome.com
