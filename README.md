@@ -29,3 +29,7 @@
 
 	* Save changes and close with :wq
 	* sudo chown user:group ~/.viminfo (Where user and group are likely your username)
+
+###Useful commands to know:
+	* Ctrl-N: Toggles a sidebar file tree 
+	* Tab: Allows for auto completion using supertab
