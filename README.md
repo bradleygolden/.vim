@@ -1,6 +1,9 @@
 ###Installation:
 
 	* cd ~/ && git clone https://github.com/bradleygolden/.vim.git
+		If you already have vim:
+			* cd ~/ && mv .vim vim.bak (Backs up your current vim settings to vim.bak)
+			* cd ~/ && mv .vimrc vim.bak/ (Backs up your vim configuration)
 
 ###Create symlinks:
 
