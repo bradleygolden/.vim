@@ -17,7 +17,8 @@ Plugin 'scrooloose/nerdtree' " file browser
 Plugin 'klen/python-mode' "fancy python plugin
 Plugin 'pangloss/vim-javascript' "fancy javasctipt plugin
 Plugin 'myusuf3/numbers.vim' " relative line numbers
-Plugin 'ervandew/supertab' " supertab - completion
+Plugin 'ervandew/supertab' " supertab - auto completion
+Plugin 'tpope/vim-surround' " quote/parenthesis/html tag wrapper
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
