@@ -38,3 +38,8 @@
 ###Useful commands to know:
 	* Ctrl-N: Toggles a sidebar file tree 
 	* Tab: Allows for auto completion using supertab
+
+###List of plugins used:
+	* Coming soon...
+###Where do I find more plugins or change the current ones?
+	* http://vimawesome.com
