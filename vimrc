@@ -19,6 +19,7 @@ Plugin 'pangloss/vim-javascript' "fancy javasctipt plugin
 Plugin 'myusuf3/numbers.vim' " relative line numbers
 Plugin 'ervandew/supertab' " supertab - auto completion
 Plugin 'tpope/vim-surround' " quote/parenthesis/html tag wrapper
+Plugin 'Yggdroot/indentLine' " indent line guides
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,3 +57,9 @@ let g:pymode_options_max_line_length = 100
 
 " enable html/css syntax highlighting in js files
 let javascript_enable_domhtmlcss = 1
+
+" change colors of indent to something prettier :)
+let g:indentLine_color_term = 239
+
+" enable airline toolbar
+let g:airline#extensions#tabline#enabled = 1
