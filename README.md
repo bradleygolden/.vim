@@ -1,6 +1,6 @@
 ###Installation:
 
-	* git clone https://github.com/bradleygolden/.vim.git
+	* cd ~/ && git clone https://github.com/bradleygolden/.vim.git
 
 ###Create symlinks:
 
