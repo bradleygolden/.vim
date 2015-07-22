@@ -64,3 +64,26 @@ let g:indentLine_color_term = 239
 " enable airline toolbar
 let g:airline#extensions#tabline#enabled = 1 " shows tab bar
 set laststatus=2 " fixes bug where airline doesn't show until splitting screen
+
+" enable auto blocking with (, [, ", {, '
+inoremap ( ()<Esc>:call BC_AddChar(")")<CR>i
+inoremap { {<CR>}<Esc>:call BC_AddChar("}")<CR><Esc>kA<CR>
+inoremap [ []<Esc>:call BC_AddChar("]")<CR>i
+inoremap " ""<Esc>:call BC_AddChar("\"")<CR>i
+inoremap ' ''<Esc>:call BC_AddChar("\"")<CR>i
+" jump out of parenthesis
+inoremap <C-j> <Esc>:call search(BC_GetChar(), "W")<CR>a
+
+function! BC_AddChar(schar)
+	if exists("b:robstack")
+		let b:robstack = b:robstack . a:schar
+	else
+		let b:robstack = a:schar
+	endif
+endfunction
+
+function! BC_GetChar()
+	let l:char = b:robstack[strlen(b:robstack)-1]
+	let b:robstack = strpart(b:robstack, 0, strlen(b:robstack)-1)
+	return l:char
+endfunction
