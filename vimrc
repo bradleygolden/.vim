@@ -20,6 +20,8 @@ Plugin 'ervandew/supertab' " supertab - auto completion
 Plugin 'tpope/vim-surround' " quote/parenthesis/html tag wrapper
 Plugin 'Yggdroot/indentLine' " indent line guides
 Plugin 'bling/vim-airline' " status bar
+Plugin 'Raimondi/delimitMate' " auto complete brackets
+Plugin 'scrooloose/nerdcommenter' " sweet block commenting
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
