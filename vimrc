@@ -22,6 +22,7 @@ Plugin 'Yggdroot/indentLine' " indent line guides
 Plugin 'bling/vim-airline' " status bar
 Plugin 'Raimondi/delimitMate' " auto complete brackets
 Plugin 'scrooloose/nerdcommenter' " sweet block commenting
+Plugin 'altercation/vim-colors-solarized' " very nice color scheme
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -38,10 +39,11 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 "
-colorscheme badwolf
+syntax enable " turn on fancy syntax settings
+colorscheme solarized " enable solarized
 set hlsearch " highlight search items
 set nu " show fixed line numbers when in others modes
-syntax enable " turn on fancy syntax settings
+set backspace=indent,eol,start " allow backspacing
 
 " set default indent settings
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
@@ -74,5 +76,4 @@ set laststatus=2 " fixes bug where airline doesn't show until splitting screen
     \ if line("'\"") >= 1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
     \ endif
-
   augroup END
