@@ -3,6 +3,7 @@
 	* Backup vim first
 		$ cd ~/ && mv .vim vim.bak (Backs up your current vim settings to vim.bak)
 		$ cd ~/ && mv .vimrc vim.bak/ (Backs up your vim configuration)
+
 	* Copy this repo and overwrite the existing .vim folder in your home directory
 		$ cd ~/ && git clone https://github.com/bradleygolden/.vim.git
 		
@@ -19,8 +20,10 @@
 ###Open vimrc and install plugins:
 
 	$ vim ~/.vimrc
-	* :source %
-	* :PluginInstall
+	:source %
+	:PluginInstall
+	:q - to exit the bundle installation screen
+	:wq - to save the .vimrc file
 
 ###Useful commands to know:
 	* Ctrl-N: Toggles a sidebar file tree 
