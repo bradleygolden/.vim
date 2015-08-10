@@ -66,3 +66,13 @@ let g:indentLine_color_term = 239
 " enable airline toolbar
 let g:airline#extensions#tabline#enabled = 1 " shows tab bar
 set laststatus=2 " fixes bug where airline doesn't show until splitting screen
+
+" When editing a file, always jump to the last known cursor position.
+  " Don't do it when the position is invalid or when inside an event handler
+  " (happens when dropping a file on gvim).
+  autocmd BufReadPost *
+    \ if line("'\"") >= 1 && line("'\"") <= line("$") |
+    \   exe "normal! g`\"" |
+    \ endif
+
+  augroup END
