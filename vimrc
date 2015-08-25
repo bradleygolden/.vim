@@ -13,7 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 " Add plugins below this line
 Plugin 'tpope/vim-fugitive' " git in vim
 Plugin 'scrooloose/nerdtree' " file browser
-Plugin 'klen/python-mode' "fancy python plugin
+"Plugin 'klen/python-mode' "fancy python plugin
 Plugin 'pangloss/vim-javascript' "fancy javasctipt plugin
 Plugin 'myusuf3/numbers.vim' " relative line numbers
 Plugin 'ervandew/supertab' " supertab - auto completion
@@ -23,7 +23,8 @@ Plugin 'bling/vim-airline' " status bar
 Plugin 'Raimondi/delimitMate' " auto complete brackets
 Plugin 'scrooloose/nerdcommenter' " sweet block commenting
 Plugin 'altercation/vim-colors-solarized' " very nice color scheme
-
+Plugin 'vim-scripts/nginx.vim' " plugin for nginx
+"
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -50,6 +51,7 @@ autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 noexpandtab
 autocmd FileType python setlocal ts=8 et sw=4 sts=4 expandtab
+
 " nerd tree
 map <C-n> :NERDTreeToggle<CR>
 
