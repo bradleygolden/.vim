@@ -24,12 +24,19 @@
 	:PluginInstall
 	:q - to exit the bundle installation screen
 	:wq - to save the .vimrc file
+	
+###If you're using C or C++:
+	$ vim ~/.vim/c-support/templates/Templates
+	Modify the Author, AuthorRef, Company, Copyright, Email, License, and Organization
 
+###Install the Solarized Theme
+	[Solarized Theme Website](http://ethanschoonover.com/solarized)
+	
 ###Useful commands to know:
 	* Ctrl-N: Toggles a sidebar file tree 
 	* Tab: Allows for auto completion using supertab
 	* \cc: Comment selected code (works with multiple lines)
 	* \cu: Uncomment selected code
 
-###Where do I find more plugins?
+###Where do I find more plugins and themes?
 	* http://vimawesome.com
