@@ -23,7 +23,7 @@
 	:source %
 	:PluginInstall
 	:q - to exit the bundle installation screen
-	Uncomment line 44: "colorscheme solarized " enable solarized
+	Uncomment line 44: "colorscheme solarized " enable solarized --> colorscheme solarized " enable solarized
 	:wq - to save the .vimrc file
 	
 ###If you're using C or C++:
