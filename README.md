@@ -31,7 +31,7 @@
 	Modify the Author, AuthorRef, Company, Copyright, Email, License, and Organization to your information
 
 ###Install the Solarized Theme for your terminal or IDE
-	[Solarized Theme Website](http://ethanschoonover.com/solarized)
+	* [Solarized Theme Website](http://ethanschoonover.com/solarized)
 	
 ###Useful commands to know:
 	* Ctrl-N: Toggles a sidebar file tree 
@@ -43,5 +43,5 @@
 	* http://vimawesome.com
 
 ###Plugins Used:
-	* (c.vim)[http://www.vim.org/scripts/script.php?script_id=213]
+	* [c.vim](http://www.vim.org/scripts/script.php?script_id=213)
 	* See the .vimrc
