@@ -23,13 +23,14 @@
 	:source %
 	:PluginInstall
 	:q - to exit the bundle installation screen
+	Uncomment line 44: "colorscheme solarized " enable solarized
 	:wq - to save the .vimrc file
 	
 ###If you're using C or C++:
 	$ vim ~/.vim/c-support/templates/Templates
 	Modify the Author, AuthorRef, Company, Copyright, Email, License, and Organization
 
-###Install the Solarized Theme
+###Install the Solarized Theme for your terminal or IDE
 	[Solarized Theme Website](http://ethanschoonover.com/solarized)
 	
 ###Useful commands to know:
