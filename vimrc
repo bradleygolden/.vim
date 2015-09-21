@@ -49,8 +49,11 @@ set backspace=indent,eol,start " allow backspacing
 " set default indent settings
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype java setlocal ts=4 sw=4 expandtab colorcolumn=100
 autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 noexpandtab
 autocmd FileType python setlocal ts=8 et sw=4 sts=4 expandtab
+autocmd FileType c setlocal ts=2 et sw=2 sts=2 expandtab
+autocmd FileType cpp setlocal ts=2 et sw=2 sts=2 expandtab
 
 " nerd tree
 map <C-n> :NERDTreeToggle<CR>
