@@ -41,7 +41,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 syntax enable " turn on fancy syntax settings
-colorscheme solarized " enable solarized
+" colorscheme solarized " enable solarized
 set hlsearch " highlight search items
 set nu " show fixed line numbers when in others modes
 set backspace=indent,eol,start " allow backspacing
