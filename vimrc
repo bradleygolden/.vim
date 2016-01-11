@@ -13,8 +13,6 @@ Plugin 'gmarik/Vundle.vim'
 " Add plugins below this line
 Plugin 'tpope/vim-fugitive' " git in vim
 Plugin 'scrooloose/nerdtree' " file browser
-"Plugin 'klen/python-mode' "fancy python plugin
-Plugin 'pangloss/vim-javascript' "fancy javasctipt plugin
 Plugin 'myusuf3/numbers.vim' " relative line numbers
 Plugin 'ervandew/supertab' " supertab - auto completion
 Plugin 'tpope/vim-surround' " quote/parenthesis/html tag wrapper
@@ -22,8 +20,6 @@ Plugin 'Yggdroot/indentLine' " indent line guides
 Plugin 'bling/vim-airline' " status bar
 Plugin 'Raimondi/delimitMate' " auto complete brackets
 Plugin 'scrooloose/nerdcommenter' " sweet block commenting
-Plugin 'altercation/vim-colors-solarized' " very nice color scheme
-Plugin 'vim-scripts/nginx.vim' " plugin for nginx
 "
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -41,7 +37,6 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 syntax enable " turn on fancy syntax settings
-" colorscheme solarized " enable solarized
 set hlsearch " highlight search items
 set nu " show fixed line numbers when in others modes
 set backspace=indent,eol,start " allow backspacing
